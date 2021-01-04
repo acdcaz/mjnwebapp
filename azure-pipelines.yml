@@ -60,7 +60,7 @@ stages:
         inputs:
           buildType: 'current'
           downloadType: 'single'
-          artifactName: 'drop'
+          artifactName: 'pino'
           downloadPath: '$(System.ArtifactsDirectory)'
           allowPartiallySucceededBuilds: true
 
@@ -71,4 +71,4 @@ stages:
           azureSubscription: 'Azure Pass - Sponsorship(501dca37-c84d-4939-96be-b6c113a26721)'
           appType: 'webApp'
           WebAppName: 'timemmeee'
-          packageForLinux: '$(System.ArtifactsDirectory)/drop/*.zip'
+          packageForLinux: '$(System.ArtifactsDirectory)/pino/*.zip'
