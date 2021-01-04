@@ -17,6 +17,7 @@
         <p>
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         </p>
+        <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
     </form>
 </body>
 </html>
