@@ -14,6 +14,7 @@
             <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
         </p>
         <asp:Button ID="OKBUTTON" runat="server" OnClick="OKBUTTON_Click" Text="OK" />
+        <asp:Button ID="Added" runat="server" Text="Added" />
         <p>
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         </p>
