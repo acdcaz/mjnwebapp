@@ -85,5 +85,5 @@ stages:
           ConnectionType: 'AzureRM'
           azureSubscription: 'Azure Pass - Sponsorship(501dca37-c84d-4939-96be-b6c113a26721)'
           appType: 'webApp'
-          WebAppName: 'timemmeee'
+          WebAppName: 'minlwlw123'
           packageForLinux: '$(System.ArtifactsDirectory)/pino/*.zip'
