@@ -60,16 +60,15 @@ stages:
       - task: AzureResourceManagerTemplateDeployment@3
         inputs:
           deploymentScope: 'Resource Group'
-          azureResourceManagerConnection: 'serviceres'
+          azureResourceManagerConnection: 'Azure Pass - Sponsorship(1)(501dca37-c84d-4939-96be-b6c113a26721)'
           subscriptionId: '501dca37-c84d-4939-96be-b6c113a26721'
           action: 'Create Or Update Resource Group'
-          resourceGroupName: 'azurepipeline-rg3'
+          resourceGroupName: 'azurepipeline-rg1'
           location: 'West Europe'
           templateLocation: 'Linked artifact'
           csmFile: 'CreateWebApp/AzureDeploy2.json'
           overrideParameters: -webAppName minlwlw1234 
           deploymentMode: 'Incremental'
-          deploymentName: 'davesDeployment'
 
       - task: DownloadBuildArtifacts@0
         inputs:
@@ -87,3 +86,4 @@ stages:
           appType: 'webApp'
           WebAppName: 'minlwlw1234'
           packageForLinux: '$(System.ArtifactsDirectory)/pino/*.zip'
+
