@@ -63,7 +63,7 @@ stages:
           azureResourceManagerConnection: 'serviceres'
           subscriptionId: '501dca37-c84d-4939-96be-b6c113a26721'
           action: 'Create Or Update Resource Group'
-          resourceGroupName: 'azurepipeline-rg1'
+          resourceGroupName: 'azurepipeline-rg3'
           location: 'West Europe'
           templateLocation: 'Linked artifact'
           csmFile: 'CreateWebApp/AzureDeploy2.json'
