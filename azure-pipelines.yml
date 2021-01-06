@@ -56,6 +56,21 @@ stages:
       vmImage: 'windows-latest'
      
     steps:
+
+      - task: AzureResourceManagerTemplateDeployment@3
+        inputs:
+          deploymentScope: 'Resource Group'
+          azureResourceManagerConnection: 'AzureRmPipelineCon'
+          subscriptionId: '501dca37-c84d-4939-96be-b6c113a26721'
+          action: 'Create Or Update Resource Group'
+          resourceGroupName: 'azurepipeline-rg1'
+          location: 'West Europe'
+          templateLocation: 'Linked artifact'
+          csmFile: 'CreateWebApp/AzureDeploy2.json'
+          overrideParameters: -webAppName minlwlw123 
+          deploymentMode: 'Incremental'
+          deploymentName: 'davesDeployment'
+
       - task: DownloadBuildArtifacts@0
         inputs:
           buildType: 'current'
