@@ -67,7 +67,7 @@ stages:
           location: 'West Europe'
           templateLocation: 'Linked artifact'
           csmFile: 'CreateWebApp/AzureDeploy2.json'
-          overrideParameters: -webAppName minlwlw123 
+          overrideParameters: -webAppName minlwlw1234 
           deploymentMode: 'Incremental'
           deploymentName: 'davesDeployment'
 
@@ -85,5 +85,5 @@ stages:
           ConnectionType: 'AzureRM'
           azureSubscription: 'Azure Pass - Sponsorship(501dca37-c84d-4939-96be-b6c113a26721)'
           appType: 'webApp'
-          WebAppName: 'minlwlw123'
+          WebAppName: 'minlwlw1234'
           packageForLinux: '$(System.ArtifactsDirectory)/pino/*.zip'
